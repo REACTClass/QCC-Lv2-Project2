@@ -1,0 +1,284 @@
+body {
+    background-color: rgb(230, 227, 222);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logoDiv {
+    border: 1px solid green;
+    width: fit-content;
+    border-radius: 10px;
+    float: left;
+    animation: logoAnimation 2s infinite;
+}
+
+@keyframes logoAnimation {
+    to {
+        transform: scale(0);
+    }
+}
+
+.headerDiv {
+    padding-bottom: 150px;
+}
+
+.header {
+    /* text-align: center; */
+    float: left;
+    margin-left: 20px;
+}
+
+.headerH1 {
+    color: rgb(8, 64, 63);
+    font-family: 'Bad Script', cursive;
+    animation: fade 5s infinite;
+}
+
+.headerH2 {
+    animation: fade 7s infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.promo {
+    background-image: url(./images/promo-bg.jpg);
+    background-size: cover;
+    height: 900px;
+    height: 25%;
+    background-position: center;
+}
+
+.promoP {
+    background-color: rgb(163, 147, 130);
+    padding: 10px;
+    text-align: center;
+    animation: slide 3s 3 alternate;
+}
+
+.promoTextBox {
+    background-color: rgba(196, 188, 183, 0.5);
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    width: 20%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    margin: 200px 0 0 50px;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* Modal one */
+
+.box {
+    /* display: flex; */
+    background-color: white;
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    overflow: scroll;
+}
+
+.innerBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+#singleTwo {
+    width: 60%
+}
+
+#singleOne {
+    width: 50%;
+}
+
+.imgBox {
+    width: 50%;
+}
+
+.infoBox {
+    width: 50%;
+}
+
+.bottomBox {
+    background-color: gray;
+    padding: 45px;
+    margin-top: 12px;
+}
+
+button {
+    padding: 10px;
+}
+
+
+.modal1,
+.modal2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal1:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal2:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modalHeader {
+    /* background-color: white; */
+    /* width: 50%; */
+    width: 100%;
+}
+
+hr {
+    border-top: 2px solid lightgrey;
+}
+
+/* ------------------ */
+.blockMain {
+    display: inline-flex;
+}
+
+.blockOne {
+    background-image: url(./images/block-one-flower.jpg);
+    background-size: 100%;
+    width: 50%;
+    /* height: 700px; */
+    height: 100%;
+    opacity: 0.6;
+    padding-top: 30px;
+    margin: 20px;
+    background-position: center;
+}
+
+.blockOne>p {
+    background: transparent;
+    color: white;
+    border: 2px solid yellow;
+    width: 30%;
+    height: 25%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 30px;
+
+}
+
+.blockTwo {
+    background-image: linear-gradient(to right, rgb(230, 227, 222), rgb(196, 188, 183), rgb(163, 147, 130));
+    background-size: 100%;
+    width: 50%;
+    /* height: 700px; */
+    height: 100%;
+    opacity: 0.6;
+    padding-top: 30px;
+    color: rgb(8, 64, 63);
+    font-weight: bold;
+    margin: 30px;
+}
+
+.singleProduct,
+.setProduct {
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.setProduct {
+    padding-bottom: 50px;
+}
+
+.singleHeading {
+    display: block;
+    padding-bottom: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+}
+
+.icons {
+    height: 50px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 100px 0px 100px;
+}
+
+.alignLeft {
+    float: right;
+    margin-top: 25px;
+}
+
+.last {
+    text-align: center;
+    margin-top: 250px;
+    padding-bottom: 20px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+.singleProduct a:hover {
+    background-color: grey;
+}
+
+.green {
+    color: rgb(8, 64, 63);
+}
+
+.subGreen {
+    color: rgb(28, 121, 88)
+}
